@@ -329,3 +329,17 @@ If a POST request is submitted and the option name already exists in the local d
     Figure 8. A POST request for an option which already exists in the local database
 
 </p>
+
+### Incorrect Option Type
+
+If a POST request is submitted and the option type is not 'p' or 'c', the message shown in Figure 9 will be returned. 
+
+<p align="center" width="100%">
+    <img width="50%" src="./images/POST_incorrect_option_type.jpg">
+</p>
+
+<p align="center" width="100%">
+    Figure 8. A POST request for an option with a type not 'p' or 'c'
+
+</p>
+
