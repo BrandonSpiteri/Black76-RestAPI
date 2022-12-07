@@ -276,3 +276,9 @@ Submitting GET requests for options which are not stored in the local database w
     Figure 5. A GET request for CL-NOV22-P-2100 option which is not stored in the local database
 
 </p>
+
+## Accessing the Home Directory
+
+Using the Flask server link `http://127.0.0.1:5000/` shown in Figure 2, the Flask server returns a JSON message of all options stored in the local database, together with the market data as well as the present value calculated using the Black (1976) model as shown in Figure 6.
+
+
