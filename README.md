@@ -57,21 +57,8 @@ numpy == 1.19.5
 scipy == 1.5.4
 
 
+A requirements.txt file has been added to this repository which installs the libraries required to run the application.
 
-
-# Models Trained
-1. Linear Regression
-2. ElasticNet
-3. SGDRegressor
-
-# Results
-| Model  | R2_Score(%) | RMSE | Note |
-| ------------- | ------------- | ------------- | ------------- |
-| Linear Regression	  | 36.01  | 28874.251778	| Basic Dataframe | 
-| Linear Regression	| 75.56	| 17845.382889	| Enhanced Dataframe |
-| Elastic Net	| 74.15	| 18353.240225	| Enhanced Dataframe |
-| SGD Regressor	| 74.29	| 18301.823954 |	Enhanced Dataframe |
-
-# Libraries
-matplotlib==3.2.1 
-
+```
+pip install -r requirements.txt
+```
