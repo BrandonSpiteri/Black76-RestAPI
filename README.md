@@ -20,7 +20,7 @@ The Black (1976) models states that the price for an option can be derived as fo
 
 $$ \text{Call Option Price} = e^{-r.T} \[ \text{FN(d} _{1} )- \text{KN(d} _{2}) \]$$
 
-$$ \text{Put Option Price} = e^{-r.T} \[ \text{KN(-d} _{2} )- \text{FN-d} _{1}) \]$$
+$$ \text{Put Option Price} = e^{-r.T} \[ \text{KN(-d} _{2} )- \text{FN(-d} _{1}) \]$$
 
 # Model Training
 A moving window mechanicsm is used, which 200 instances are used as training set, and the next day (d) is predicted. The window moves by one day, and predicts the following day (d+1). 
