@@ -153,7 +153,7 @@ The flask application can be started by executing the following command in the d
 The Flask server returns the path on which the server is running as shown in Figure 2:
 
 <p align="center" width="100%">
-    <img width="50%" src="./images/hosted_flask.jpg">
+    <img width="50%" src="./images/hosted_flask_app.jpg">
 </p>
 
 <p align="center" width="100%">
