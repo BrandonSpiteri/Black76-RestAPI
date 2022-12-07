@@ -18,7 +18,7 @@ The model aims to give an approximation to the current present value of an optio
 
 The Black (1976) models states that the price for an option can be derived as follows:
 
-$$ \text{Call Option Price} = e^{-r.T} $$
+$$ \text{Call Option Price} = e^{-r.T} [ \text{FN(d}_{1} $$
 
 # Model Training
 A moving window mechanicsm is used, which 200 instances are used as training set, and the next day (d) is predicted. The window moves by one day, and predicts the following day (d+1). 
@@ -39,12 +39,3 @@ A moving window mechanicsm is used, which 200 instances are used as training set
 # Libraries
 matplotlib==3.2.1 
 
-seaborn==0.11.1
-
-scikit-learn==0.24.1
-
-pandas==1.1.5
-
-numpy==1.19.2
-
-python==3.6.0
