@@ -340,7 +340,7 @@ If a POST request is submitted and any key to calculate the PV is missing in the
 </p>
 
 <p align="center" width="100%">
-    Figure 10. A POST request for with the missing volatility rate
+    Figure 9. A POST request for an option with the missing volatility rate
 
 </p>
 
@@ -356,6 +356,32 @@ If a POST request is submitted and the option type is not 'p' or 'c', the messag
 
 <p align="center" width="100%">
     Figure 10. A POST request for an option with a type not 'p' or 'c'
+
+</p>
+
+
+### Negative Value for the Continuous Market Data Variables
+
+If a POST request is submitted and any of the continuous variables have a negative value (or has a string/symbol), the message shown in Figure 11 will be returned. 
+
+<p align="center" width="100%">
+    <img width="50%" src="./images/POST_negative_variable.jpg">
+</p>
+
+<p align="center" width="100%">
+    Figure 11. A POST request  for an option with a negative continuous variable 
+
+</p>
+
+### Incorrect Expiry Date
+
+If a POST request is submitted and the expiry date is not in the yyyy-mm-dd format, the message shown in Figure 12 will be returned. 
+<p align="center" width="100%">
+    <img width="50%" src="./images/POST_bad_expiry_date.jpg">
+</p>
+
+<p align="center" width="100%">
+    Figure 12. A POST request  for an option with incorrect expiry date
 
 </p>
 
