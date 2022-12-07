@@ -41,7 +41,7 @@ v = Implied volatility for the underlying forward price
 
 N(.) = normal cumulative distribution function
 
-# Environment Setup and Library Used
+# Environment Setup and Libraries Used
 The solution is built in Python and the web framework which handles the RestAPI web application is developed using Flask.
 
 A Python IDE is required to host the application together with the following Python and library versions:
