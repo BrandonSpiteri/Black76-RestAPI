@@ -330,16 +330,32 @@ If a POST request is submitted and the option name already exists in the local d
 
 </p>
 
+
+### Missing Key 
+
+If a POST request is submitted and any key to calculate the PV is missing in the JSON body, the message shown in Figure 9 will be returned. 
+
+<p align="center" width="100%">
+    <img width="50%" src="./images/POST_missing_key.jpg">
+</p>
+
+<p align="center" width="100%">
+    Figure 10. A POST request for with the missing volatility rate
+
+</p>
+
+
+
 ### Incorrect Option Type
 
-If a POST request is submitted and the option type is not 'p' or 'c', the message shown in Figure 9 will be returned. 
+If a POST request is submitted and the option type is not 'p' or 'c', the message shown in Figure 10 will be returned. 
 
 <p align="center" width="100%">
     <img width="50%" src="./images/POST_incorrect_option_type.jpg">
 </p>
 
 <p align="center" width="100%">
-    Figure 8. A POST request for an option with a type not 'p' or 'c'
+    Figure 10. A POST request for an option with a type not 'p' or 'c'
 
 </p>
 
