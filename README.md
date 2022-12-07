@@ -46,10 +46,15 @@ The solution is built in Python and the web framework which handles the RestAPI 
 
 A Python IDE is required to host the application together with the following Python and library versions:
 Python == 3.6.5
+
 flask == 2.0.3
+
 json == 2.0.9
+
 numpy == 1.19.5
+
 scipy == 1.5.4
+
 
 
 
