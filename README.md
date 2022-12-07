@@ -11,7 +11,7 @@ A RestAPI web application which:
 4. Hadnle DELETE requests to delete options from local database
 
 
-# Black (1976) Model 
+#Black (1976) Model 
 
 The Black (1976) model is used to evaluate the present value of options and can be used for European options on commodities, future contract as well as bonds. 
 
