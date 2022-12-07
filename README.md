@@ -164,4 +164,27 @@ The Flask server returns the path on which the server is running as shown in Fig
 
 # Communication Protocol
 
+This demonstration is carried out using Postman to send POST, GET and DELETE requests to the Flask Application. 
 
+## Option Name
+
+The RestAPI allows the user to use any naming convension to unique identify an option. 
+
+The following option name standard is used by the author: AA-MMMYY-{C/P}-1111
+
+where:
+
+AA - represents the product name e.g. BB for Brent Cruid Oil Futures
+
+MMMYY - represents the Contract Month e.g. JAN24
+
+{C/P} - can take a value of 'C' or 'P' depending on whether the option is a call of put
+
+1111 - can be any integer value representing the strike price e.g. 100
+
+An example of a name can be: BB-JAN24-C-100 (Brent Cruid Oil Futures, with a contract month
+    of January 2024, being a call, with a strike price of $100
+
+
+
+## Sending Post Requests
