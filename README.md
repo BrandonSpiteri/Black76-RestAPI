@@ -1,4 +1,4 @@
-# Rest API application for Option pricing using the Black-76 Formula
+# Rest API Application for Option Pricing using the Black-76 Formula
 
 A RestAPI web application which:
 1. Stores options market data in a local database using PUT requests
