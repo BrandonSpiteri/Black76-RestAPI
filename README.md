@@ -41,8 +41,10 @@ v = Implied volatility for the underlying forward price
 
 N(.) = normal cumulative distribution function
 
-# Model Training
-A moving window mechanicsm is used, which 200 instances are used as training set, and the next day (d) is predicted. The window moves by one day, and predicts the following day (d+1). 
+# Libraries used and Environment Setup
+
+
+
 
 # Models Trained
 1. Linear Regression
