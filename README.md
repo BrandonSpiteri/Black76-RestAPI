@@ -187,7 +187,7 @@ An example of a name can be: BB-JAN24-C-100 (Brent Cruid Oil Futures, with a con
 
 
 
-## Sending Post Requests
+## Sending POST Requests
 POST requests can be invoked by sending a POST message to the server. Using the Flask server link `http://127.0.0.1:5000/` shown in Figure 2, a POST request is sent by specifying the following URL:
 
 ```
@@ -234,4 +234,25 @@ If all the required market parameters are met within the JSON body, the paramete
 }
 ```
 
+<p align="center" width="100%">
+    <img width="50%" src="./images/POST_example.jpg">
+</p>
+
+<p align="center" width="100%">
+    Figure 3. A POST request for BB-JAN22-P-100 option
+
+</p>
+
+The API calculates the present value based on the market data provided and stores all data within a local database. 
+
+## Sending GET Requests
+get requests can be invoked by sending a GET message to the server. Using the Flask server link `http://127.0.0.1:5000/` shown in Figure 2, a GET request is sent by specifying the following URL:
+
+```
+http://127.0.0.1:5000/BB-NOV22-P-2100
+```
+
+Where BB-NOV22-P-2100 is the option name (Brent Cruid Oil Future, contract month November 2022, Put Option, and Strike value of $2100)
+
+If the option is found in the local database, a JSON message containing the `pv` that is the present value calculated using the Black (1976) model as well as the stored market data are returned as shown in Figure 4.
 
