@@ -283,7 +283,7 @@ Using the Flask server link `http://127.0.0.1:5000/` shown in Figure 2, the Flas
 
 
 <p align="center" width="100%">
-    <img width="50%" src="./images/index.jpg">
+    <img width="30%" src="./images/index.jpg">
 </p>
 
 <p align="center" width="100%">
