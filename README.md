@@ -31,14 +31,15 @@ $$ \text{d} _{2} =  \text{d} _{1} - v\sqrt{t}   $$
 
 f = Future option price
 
-$$ \text{x = Strike price at which option will be executed in the future} $$
+x = Strike price at which option will be executed in the future
 
-$$ \text{t = Maturity period (in years), that is, years left until option expires} $$
+t = Maturity period (in years), that is, years left until option expires
 
-$$ \text{r = Continuously compounded risk free interest rate} $$
+r = Continuously compounded risk free interest rate
 
-$$ \text{v = Implied volatility for the underlying forward price} $$
+v = Implied volatility for the underlying forward price
 
+N(.) = normal cumulative distribution function
 
 # Model Training
 A moving window mechanicsm is used, which 200 instances are used as training set, and the next day (d) is predicted. The window moves by one day, and predicts the following day (d+1). 
