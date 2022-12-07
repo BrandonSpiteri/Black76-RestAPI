@@ -267,3 +267,18 @@ If the option is found in the local database, a JSON message containing the `pv`
 
 Submitting GET requests for options which are not stored in the local database will return a warning message as shown in Figure 5.
 
+
+<p align="center" width="100%">
+    <img width="50%" src="./images/GET_example_option_not_found.jpg">
+</p>
+
+<p align="center" width="100%">
+    Figure 5. A GET request for CL-NOV22-P-2100 option which is not stored in the local database
+
+</p>
+
+## Accessing the Home Directory
+
+Using the Flask server link `http://127.0.0.1:5000/` shown in Figure 2, the Flask server returns a JSON message of all options stored in the local database, together with the market data as well as the present value calculated using the Black (1976) model as shown in Figure 6.
+
+
