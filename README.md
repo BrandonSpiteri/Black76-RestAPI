@@ -64,3 +64,9 @@ Run the following command in your Python IDE console to install the required lib
 ```
 pip install -r requirements.txt
 ```
+
+# Code Architecture
+
+The application was delivered using object oriented programming to ensure code modularity and re-usability. 
+
+Figure 1 shows the 4 classes used in the application. Note that class inheritance is adapted, to allow methods and properties to be inherited.  
