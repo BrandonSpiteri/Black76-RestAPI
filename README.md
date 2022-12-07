@@ -116,3 +116,22 @@ app = Flask(__name__)
 api = Api(app)
 ```
 
+A resource is added to the API and the  child `black_76` class is passed to the resource. 
+```
+#Route Option names to class 'black_75'
+#Add resource to Flask API
+api.add_resource(black_76,'/<string:name>')
+```
+Flask routes any URLs to the defined API resource which match the following paths:
+
+```
+[http://{host_ip}:{port}/<string:name>
+```
+
+where 
+
+host_ip = IP on which Flask application is hosted
+
+port = port handling URI requests
+
+name = option name 
