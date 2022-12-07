@@ -188,3 +188,50 @@ An example of a name can be: BB-JAN24-C-100 (Brent Cruid Oil Futures, with a con
 
 
 ## Sending Post Requests
+POST requests can be invoked by sending a POST message to the server. Using the Flask server link `http://127.0.0.1:5000/` shown in Figure 2, a POST request is sent by specifying the following URL:
+
+```
+http://127.0.0.1:5000/BB-NOV22-P-2100
+```
+
+Where BB-NOV22-P-2100 is the option name (Brent Cruid Oil Future, contract month November 2022, Put Option, and Strike value of $2100)
+
+Market data for the option is sent in the form of a JSON message within the POST request as follows:
+
+```
+{
+  "type":"p",
+  "f":2006,
+  "x":2100,
+  "expiry":"2023-01-05",
+  "r": 0.051342,
+  "v":0.35
+}
+```
+The market data shows that the option type is a **put**, with the future option price of $2100, strike price of $2100, expiry of 2023-01-05 (yyyy-mm-dd format), risk free return of 5.13% and an implied volatility of 35%. 
+
+Note that the API expects the following in the JSON body:
+
+"type": option type as a single character 'c' or 'p' defining the if the option is a call or put
+
+"f": future option price as a continuous positive variable
+
+"x": strike price as a continuous positive variable
+
+"expiry": option expiry date in the string format yyyy-mm-dd
+
+
+"r": risk free rate as a continuous positive variable
+
+"v": volatility as a continuous positive variable
+
+
+If all the required market parameters are met within the JSON body, the parameters are in the expected type, and the option name specified in the URL is not already stored in the local database, the API will respond with the following message:
+
+```
+{
+    "message": "Added BB-JAN22-P-100 successfully"
+}
+```
+
+
