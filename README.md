@@ -70,3 +70,6 @@ pip install -r requirements.txt
 The application was delivered using object oriented programming to ensure code modularity and re-usability. 
 
 Figure 1 shows the 4 classes used in the application. Note that class inheritance is adapted, to allow methods and properties to be inherited.  
+
+![plot](./images/class_diagram.jpg)
+
