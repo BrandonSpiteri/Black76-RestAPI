@@ -73,6 +73,8 @@ Figure 1 shows the 4 classes used in the application. Note that class inheritanc
 
 <p align="center" width="100%">
     <img width="50%" src="./images/class_diagram.jpg">
+    Figure 1. Application class diagram
+
 </p>
 
 Figure 1. Application class diagram
