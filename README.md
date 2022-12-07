@@ -1,6 +1,12 @@
 # Table of Contents
 
-1. [Black (1976) Model](#Black (1976) Model)
+1. [Black (1976) Model](#black)
+2. [Code Architecture](#architecture)
+3. [Flask RestAPI](#flask)
+4. [Launching the Flask Application](#launch)
+5. [Communication Protocol](#communication)
+6. [Deploying to Production](#production)
+7. [Error Handling](#error)
 
 # Rest API Application for Option Pricing using the Black-76 Formula
 
@@ -11,7 +17,7 @@ A RestAPI web application which:
 4. Hadnle DELETE requests to delete options from local database
 
 
-#Black (1976) Model 
+# Black (1976) Model <a name="black"></a>
 
 The Black (1976) model is used to evaluate the present value of options and can be used for European options on commodities, future contract as well as bonds. 
 
@@ -69,7 +75,7 @@ Run the following command in your Python IDE console to install the required lib
 pip install -r requirements.txt
 ```
 
-# Code Architecture
+# Code Architecture <a name="architecture"></a>
 
 The application was delivered using object oriented programming to ensure code modularity and re-usability. 
 
@@ -109,7 +115,7 @@ def _put_value(self):
     '''
     return round( np.exp(-self.r*self.t) * (self.x*norm.cdf(-self._d2())-self.f*norm.cdf(-self._d1())) ,2)
 ```
-# Flask RestAPI
+# Flask RestAPI <a name="flask"></a>
 
 The main entry point for the Rest API application in initialised in Flask as follows:
 
@@ -148,7 +154,7 @@ def index():
     return jsonify({'Local Database': Data})
 ```
 
-# Launching the Flask Application
+# Launching the Flask Application <a name="launch"></a>
 
 The flask application can be started by executing the following command in the directory containing this repository. 
 
@@ -166,7 +172,7 @@ The Flask server returns the path on which the server is running as shown in Fig
 </p>
 
 
-# Communication Protocol
+# Communication Protocol <a name="communication"></a>
 
 This demonstration is carried out using Postman to send POST, GET and DELETE requests to the Flask Application. 
 
@@ -318,7 +324,7 @@ If the option is found in the local database, a JSON message confirming that the
 If the option to be deleted is not found in the local database, a message similar to Figure 5 will be returned, stating that option was not found.
 
 
-# Deploying to Production
+# Deploying to Production <a name="production"></a>
 
 For this demonstration, the application has been hosted on a local development environment. The local server was run on `http://127.0.0.1:5000/`.
 
@@ -338,7 +344,7 @@ A more secure, less maintainable and more reliable method is to host the API on 
 
 Both platforms offer the user of integrated load balancers, alarm triggering, and enhanced security.
 
-# Error Handling
+# Error Handling <a name="error"></a>
 
 The Rest application invokes a 404 error handler whenever an exception is raised and returns the error message as JSON to the requester.
 
