@@ -136,6 +136,10 @@ port = port handling URI requests
 
 name = option name 
 
-The Flask server also route home directory requests, that is, `http://{host_ip}:{port}` access requests to a home page which displays all stored options and market data within the local database. 
+The Flask server also route home directory requests, that is, `http://{host_ip}:{port}` access requests to a home page which displays all stored options and market data within the local database using the `route` method shown below.
 
-
+```
+@app.route("/")
+def index():
+    return jsonify({'Local Database': Data})
+```
