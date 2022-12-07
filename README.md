@@ -125,7 +125,7 @@ api.add_resource(black_76,'/<string:name>')
 Flask routes any URLs to the defined API resource which match the following paths:
 
 ```
-[http://{host_ip}:{port}/<string:name>
+http://{host_ip}:{port}/<string:name>
 ```
 
 where 
@@ -135,3 +135,7 @@ host_ip = IP on which Flask application is hosted
 port = port handling URI requests
 
 name = option name 
+
+The Flask server also route home directory requests, that is, `http://{host_ip}:{port}` access requests to a home page which displays all stored options and market data within the local database. 
+
+
