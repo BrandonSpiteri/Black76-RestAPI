@@ -79,4 +79,14 @@ Figure 1 shows the 4 classes used in the application. Note that class inheritanc
     Figure 1. Application class diagram
 
 </p>
-Figure 1. Application class diagram
+
+Flask RESTful provides a `Resource` base class that handles the routing of HTTP requests and methods. This class is inherited by the `rest_api_handler` class which captures the following HTTP Methods:
+
+1. POST requests - The function `post(name)` parses the option name from the URI, performs validity checks on the option market data and populates the option in the local database
+2. GET requests - The function `get(name)` parses the option name from the URI, and returns the PV of the option together with the stored market data 
+3. DELETE requests - The function `get(name)` parses the option name from the URI, and deletes the option (if present) from the local database
+
+The `preprocess_post_body` class contains functions which validate the content of the POST request.
+
+The `black_76` class inherits from the `preprocess_post_body` as well as the `rest_api_handler` class and calculates the present value of the option using the Black (1976) model. 
+
