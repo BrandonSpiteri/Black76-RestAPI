@@ -307,7 +307,7 @@ If the option is found in the local database, a JSON message confirming that the
 </p>
 
 <p align="center" width="100%">
-    Figure 7. A GET request for BRN-JAN24-C-100 option
+    Figure 7. A DELETE request for BB-NOV22-P-2100 option
 
 </p>
 
@@ -317,4 +317,15 @@ If the option to be deleted is not found in the local database, a message simila
 
 The Rest application invokes a 404 error handler whenever an exception is raised and returns the error message as JSON to the requester.
 
+### Option already exists
 
+If a POST request is submitted and the option name already exists in the local database, the message shown in Figure 8 will be returned. 
+
+<p align="center" width="100%">
+    <img width="50%" src="./images/POST_option_already_exists.jpg">
+</p>
+
+<p align="center" width="100%">
+    Figure 8. A POST request for an option which already exists in the local database
+
+</p>
