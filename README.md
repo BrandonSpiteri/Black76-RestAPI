@@ -302,4 +302,19 @@ Where BB-NOV22-P-2100 is the option name
 
 If the option is found in the local database, a JSON message confirming that the option has been deleted will be returned as shown in Figure 7.
 
+<p align="center" width="100%">
+    <img width="50%" src="./images/DELETE_example.jpg">
+</p>
+
+<p align="center" width="100%">
+    Figure 7. A GET request for BRN-JAN24-C-100 option
+
+</p>
+
+If the option to be deleted is not found in the local database, a message similar to Figure 5 will be returned, stating that option was not found.
+
+# Error Handling
+
+The Rest application invokes a 404 error handler whenever an exception is raised and returns the error message as JSON to the requester.
+
 
