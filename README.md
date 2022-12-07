@@ -96,9 +96,9 @@ Flask RESTful provides a `Resource` base class that handles the routing of HTTP 
 2. GET requests - The function `get(name)` parses the option name from the URI, and returns the PV of the option together with the stored market data 
 3. DELETE requests - The function `get(name)` parses the option name from the URI, and deletes the option (if present) from the local database
 
-The `preprocess_post_body` class contains functions which validate the content of the POST request.
+The `preprocess_post_body` class contains functions which validate the content of the POST request and is also inherited by the `rest_api_handler` class.
 
-The `black_76` class inherits from the `preprocess_post_body` as well as the `rest_api_handler` class and calculates the present value of the option using the Black (1976) model. The call and put option present values are calculated within the `_call_value` and `_put_value` function as shown below.
+The `black_76` class inherits from the `rest_api_handler` class and calculates the present value of the option using the Black (1976) model. The call and put option present values are calculated within the `_call_value` and `_put_value` function as shown below.
 
 ```
 def _call_value(self):
