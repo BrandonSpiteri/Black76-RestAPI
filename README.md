@@ -72,4 +72,6 @@ The application was delivered using object oriented programming to ensure code m
 Figure 1 shows the 4 classes used in the application. Note that class inheritance is adapted, to allow methods and properties to be inherited.  
 
 ![plot](./images/class_diagram.jpg)
+Figure 1. Application class diagram
+
 
