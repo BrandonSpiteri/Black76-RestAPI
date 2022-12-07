@@ -246,7 +246,7 @@ If all the required market parameters are met within the JSON body, the paramete
 The API calculates the present value based on the market data provided and stores all data within a local database. 
 
 ## Sending GET Requests
-get requests can be invoked by sending a GET message to the server. Using the Flask server link `http://127.0.0.1:5000/` shown in Figure 2, a GET request is sent by specifying the following URL:
+GET requests can be invoked by sending a GET message to the server. Using the Flask server link `http://127.0.0.1:5000/` shown in Figure 2, a GET request is sent by specifying the following URL:
 
 ```
 http://127.0.0.1:5000/BB-NOV22-P-2100
@@ -290,3 +290,16 @@ Using the Flask server link `http://127.0.0.1:5000/` shown in Figure 2, the Flas
     Figure 6. The Flask application returns the options stored in the local database when access the root directory.
 
 </p>
+
+## Sending DELETE Requests
+DELETE requests can be invoked by sending a DELETE message to the server. Using the Flask server link `http://127.0.0.1:5000/` shown in Figure 2, a DELETE request is sent by specifying the following URL:
+
+```
+http://127.0.0.1:5000/BRN-JAN24-C-100
+```
+
+Where BB-NOV22-P-2100 is the option name 
+
+If the option is found in the local database, a JSON message confirming that the option has been deleted will be returned as shown in Figure 7.
+
+
