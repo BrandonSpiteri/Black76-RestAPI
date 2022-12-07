@@ -24,7 +24,7 @@ $$ \text{Put Option Price} = e^{-r.T} \[ \text{KN(-d} _{2} )- \text{FN(-d} _{1})
 
 Where:
 
-$$ \text{d} _{1} =  \frac{  \text{ln(F/K) + (v}^2 \text{\2) . T}    } {vT}   $$
+$$ \text{d} _{1} =  \frac{  \text{ln(F/K) + (v}^2 \text{/2) . T}    } {v\sqrt[2]{T}}   $$
 
 # Model Training
 A moving window mechanicsm is used, which 200 instances are used as training set, and the next day (d) is predicted. The window moves by one day, and predicts the following day (d+1). 
