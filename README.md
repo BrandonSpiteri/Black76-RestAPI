@@ -29,7 +29,7 @@ $$ \text{d} _{1} =  \frac{  \text{ln(f/x) + (v}^2 \text{/2) . t}    } {v\sqrt{t}
 $$ \text{d} _{2} =  \text{d} _{1} - v\sqrt{t}   $$
 
 
-$$ \text{f = Future option price} $$
+f = Future option price
 
 $$ \text{x = Strike price at which option will be executed in the future} $$
 
