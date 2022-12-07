@@ -71,11 +71,9 @@ The application was delivered using object oriented programming to ensure code m
 
 Figure 1 shows the 4 classes used in the application. Note that class inheritance is adapted, to allow methods and properties to be inherited.  
 
-![plot](./images/class_diagram.jpg)
-
-Figure 1. Application class diagram
-
 **Align center:**
 <p align="center" width="100%">
-    <img width="33%" src="./images/class_diagram.jpg">
+    <img width="100%" src="./images/class_diagram.jpg">
+    \caption{Figure 1. Application class diagram}
+
 </p>
