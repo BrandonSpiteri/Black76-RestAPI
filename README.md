@@ -105,4 +105,14 @@ def _put_value(self):
     '''
     return round( np.exp(-self.r*self.t) * (self.x*norm.cdf(-self._d2())-self.f*norm.cdf(-self._d1())) ,2)
 ```
-# Black (1976) Model 
+# Flask RestAPI
+
+The main entry point for the Rest API application in initialised in Flask as follows:
+
+```
+#define Flask server
+app = Flask(__name__)
+#define API
+api = Api(app)
+```
+
