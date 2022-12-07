@@ -57,7 +57,7 @@ numpy == 1.19.5
 scipy == 1.5.4
 
 
-A requirements.txt file has been added to this repository which installs the libraries required to run the application.
+A `requirements.txt` file has been added to this repository which installs the libraries required to run the application.
 
 ```
 pip install -r requirements.txt
