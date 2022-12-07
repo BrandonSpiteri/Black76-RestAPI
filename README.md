@@ -261,6 +261,9 @@ If the option is found in the local database, a JSON message containing the `pv`
 </p>
 
 <p align="center" width="100%">
-    Figure 3. A GET request for BB-JAN22-P-100 option
+    Figure 4. A GET request for BB-JAN22-P-100 option
 
 </p>
+
+Submitting GET requests for options which are not stored in the local database will return a warning message as shown in Figure 5.
+
