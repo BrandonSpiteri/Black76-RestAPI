@@ -234,4 +234,12 @@ If all the required market parameters are met within the JSON body, the paramete
 }
 ```
 
+<p align="center" width="100%">
+    <img width="50%" src="./images/POST_example.jpg">
+</p>
+
+<p align="center" width="100%">
+    Figure 3. A POST request for BB-JAN22-P-100 option
+
+</p>
 
