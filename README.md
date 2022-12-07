@@ -1,3 +1,7 @@
+# Table of Contents
+
+1. [Black (1976) Model](# Black (1976) Model)
+
 # Rest API Application for Option Pricing using the Black-76 Formula
 
 A RestAPI web application which:
