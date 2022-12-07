@@ -59,6 +59,8 @@ scipy == 1.5.4
 
 A `requirements.txt` file has been added to this repository which installs the libraries required to run the application.
 
+Run the following command in your Python IDE console to install the required libraries 
+
 ```
 pip install -r requirements.txt
 ```
