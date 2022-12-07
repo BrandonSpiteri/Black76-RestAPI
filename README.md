@@ -316,7 +316,21 @@ If the option to be deleted is not found in the local database, a message simila
 
 # Deploying to Production
 
+For this demonstration, the application has been hosted on a local development environment. The local server was run on `http://127.0.0.1:5000/`.
 
+The RestAPI can be deployed to production. The documentation of the Flask website detailed how the API can be deployed to production:
+
+https://flask.palletsprojects.com/en/2.2.x/deploying/
+
+This can be achieved by either option for:
+
+1. Self Hosted Server
+
+Using a WSGI application, a self managed and self hosted server can be hosted to run the application. The server would return a URL which can be replaced by the `http://127.0.0.1:5000/` used throughout this document. The authentication in the form of API keys can be used to securely send requests to the API. 
+
+2. Cloud Platform
+
+A more secure, less maintainable and more reliable method is to host the API on a fully managed web hosting cloud platform such as [Azure App Service](https://learn.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=flask%2Cwindows%2Cazure-cli%2Cvscode-deploy%2Cdeploy-instructions-azportal%2Cterminal-bash%2Cdeploy-instructions-zip-azcli) or [AWS Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-flask.html)
 
 
 # Error Handling
