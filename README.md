@@ -64,3 +64,82 @@ Run the following command in your Python IDE console to install the required lib
 ```
 pip install -r requirements.txt
 ```
+
+# Code Architecture
+
+The application was delivered using object oriented programming to ensure code modularity and re-usability. 
+
+Figure 1 shows the 4 classes used in the application. Note that class inheritance is adapted, to allow methods and properties to be inherited.  
+
+<p align="center" width="100%">
+    <img width="50%" src="./images/class_diagram.jpg">
+</p>
+
+<p align="center" width="100%">
+    Figure 1. Application class diagram
+
+</p>
+
+Flask RESTful provides a `Resource` base class that handles the routing of HTTP requests and methods. This class is inherited by the `rest_api_handler` class which captures the following HTTP Methods:
+
+1. POST requests - The function `post(name)` parses the option name from the URI, performs validity checks on the option market data and populates the option in the local database
+2. GET requests - The function `get(name)` parses the option name from the URI, and returns the PV of the option together with the stored market data 
+3. DELETE requests - The function `get(name)` parses the option name from the URI, and deletes the option (if present) from the local database
+
+The `preprocess_post_body` class contains functions which validate the content of the POST request.
+
+The `black_76` class inherits from the `preprocess_post_body` as well as the `rest_api_handler` class and calculates the present value of the option using the Black (1976) model. The call and put option present values are calculated within the `_call_value` and `_put_value` function as shown below.
+
+```
+def _call_value(self):
+    '''
+    Function which returns the present value of the call option
+
+    '''
+    return round( np.exp(-self.r*self.t) * (self.f*norm.cdf(self._d1())-self.x*norm.cdf(self._d2())) ,2)
+
+def _put_value(self):
+    '''
+    Function which returns the present value of the put option
+
+    '''
+    return round( np.exp(-self.r*self.t) * (self.x*norm.cdf(-self._d2())-self.f*norm.cdf(-self._d1())) ,2)
+```
+# Flask RestAPI
+
+The main entry point for the Rest API application in initialised in Flask as follows:
+
+```
+#define Flask server
+app = Flask(__name__)
+#define API
+api = Api(app)
+```
+
+A resource is added to the API and the  child `black_76` class is passed to the resource. 
+```
+#Route Option names to class 'black_75'
+#Add resource to Flask API
+api.add_resource(black_76,'/<string:name>')
+```
+Flask routes any URLs to the defined API resource which match the following paths:
+
+```
+http://{host_ip}:{port}/<string:name>
+```
+
+where 
+
+host_ip = IP on which Flask application is hosted
+
+port = port handling URI requests
+
+name = option name 
+
+The Flask server also route home directory requests, that is, `http://{host_ip}:{port}` access requests to a home page which displays all stored options and market data within the local database using the `route` method shown below.
+
+```
+@app.route("/")
+def index():
+    return jsonify({'Local Database': Data})
+```
