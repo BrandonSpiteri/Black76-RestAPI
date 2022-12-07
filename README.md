@@ -332,6 +332,7 @@ Using a WSGI application, a self managed and self hosted server can be hosted to
 
 A more secure, less maintainable and more reliable method is to host the API on a fully managed web hosting cloud platform such as [Azure App Service](https://learn.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=flask%2Cwindows%2Cazure-cli%2Cvscode-deploy%2Cdeploy-instructions-azportal%2Cterminal-bash%2Cdeploy-instructions-zip-azcli) or [AWS Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-flask.html)
 
+Both platforms offer the user of integrated load balancers, alarm triggering, and enhanced security.
 
 # Error Handling
 
