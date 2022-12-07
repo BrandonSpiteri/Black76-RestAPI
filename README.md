@@ -18,15 +18,26 @@ The model aims to give an approximation to the current present value of an optio
 
 The Black (1976) models states that the price for an option can be derived as follows:
 
-$$ \text{Call Option Price} = e^{-r.T} \[ \text{FN(d} _{1} )- \text{KN(d} _{2}) \]$$
+$$ \text{Call Option Price} = e^{-r.t} \[ \text{fN(d} _{1} )- \text{xN(d} _{2}) \]$$
 
-$$ \text{Put Option Price} = e^{-r.T} \[ \text{KN(-d} _{2} )- \text{FN(-d} _{1}) \]$$
+$$ \text{Put Option Price} = e^{-r.t} \[ \text{xN(-d} _{2} )- \text{fN(-d} _{1}) \]$$
 
 Where:
 
-$$ \text{d} _{1} =  \frac{  \text{ln(F/K) + (v}^2 \text{/2) . T}    } {v\sqrt{T}}   $$
+$$ \text{d} _{1} =  \frac{  \text{ln(f/x) + (v}^2 \text{/2) . t}    } {v\sqrt{t}}   $$
 
-$$ \text{d} _{2} =  \text{d} _{1} - v\sqrt{T}   $$
+$$ \text{d} _{2} =  \text{d} _{1} - v\sqrt{t}   $$
+
+
+$$ \text{f = Future option price} $$
+
+$$ \text{x = Strike price at which option will be executed in the future} $$
+
+$$ \text{t = Maturity period (in years), that is, years left until option expires} $$
+
+$$ \text{r = Continuously compounded risk free interest rate} $$
+
+$$ \text{v = Implied volatility for the underlying forward price} $$
 
 
 # Model Training
