@@ -328,11 +328,9 @@ If the option to be deleted is not found in the local database, a message simila
 
 # Deploying to Production <a name="production"></a>
 
-For this demonstration, the application has been hosted on a local development environment. The local server was run on `http://127.0.0.1:5000/`.
+For this demonstration, the application has been hosted on a local hosted server. The local server was run on `http://127.0.0.1:5000/`.
 
-The RestAPI can be deployed to production. The documentation of the Flask website detailed how the API can be deployed to production:
-
-https://flask.palletsprojects.com/en/2.2.x/deploying/
+The RestAPI can be deployed to production. 
 
 This can be achieved by either option for:
 
