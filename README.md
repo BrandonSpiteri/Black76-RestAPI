@@ -220,7 +220,7 @@ Market data for the option is sent in the form of a JSON message within the POST
   "v":0.35
 }
 ```
-The market data shows that the option type is a **put**, with the future option price of $2100, strike price of $2100, expiry of 2023-01-05 (yyyy-mm-dd format), risk free return of 5.13% and an implied volatility of 35%. 
+The market data shows that the option type is a **put**, with the future option price of $2006, strike price of $2100, expiry of 2023-01-05 (yyyy-mm-dd format), risk free return of 5.13% and an implied volatility of 35%. 
 
 Note that the API expects the following in the JSON body:
 
