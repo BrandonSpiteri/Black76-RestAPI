@@ -98,7 +98,7 @@ Flask RESTful provides a `Resource` base class that handles the routing of HTTP 
 
 The `preprocess_post_body` class contains functions which validate the content of the POST request and is also inherited by the `rest_api_handler` class.
 
-The `black_76` class inherits from the `rest_api_handler` class and calculates the present value of the option using the Black (1976) model. The call and put options present value is calculated within the `_call_value` and `_put_value` function as shown below.
+The `black_76` class inherits from the `rest_api_handler` class and calculates the present value of the option using the Black (1976) model. The call and put options present value is calculated within the `_call_value` and `_put_value` functions as shown below.
 
 ```
 def _call_value(self):
