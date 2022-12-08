@@ -158,7 +158,9 @@ def index():
 
 The flask application can be started by executing the following command in the directory containing this repository. 
 
-```python app.py```
+```
+python app.py
+```
 
 The Flask server returns the path on which the server is running as shown in Figure 2:
 
