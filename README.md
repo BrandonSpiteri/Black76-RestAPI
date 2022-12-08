@@ -11,10 +11,10 @@
 # Rest API Application for Option Pricing using the Black-76 Formula
 
 A RestAPI web application which:
-1. Stores options market data in a local database using PUT requests
-2. Calculate the present value on options using Black-76 formula
-3. Handle GET requests to retrieve uploaded market data as well as the calculated present value
-4. Hadnle DELETE requests to delete options from local database
+1. Stores options market data in a local database using POST requests
+2. Calculates the present value of options using Black-76 formula
+3. Handles GET requests to retrieve uploaded market data as well as the calculated present value
+4. Handles DELETE requests to delete options from local database
 
 
 # Black (1976) Model <a name="black"></a>
