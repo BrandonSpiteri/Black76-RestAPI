@@ -57,8 +57,6 @@ class preprocess_post_body():
     """
     Class to preprocess POST body sent to REST API
 
-    Class 'preprocess_post_body' inherts the properties and methods from its parent class 'rest_api_handler'
-
     ...
 
     Attributes
@@ -229,7 +227,7 @@ class preprocess_post_body():
     
     def _is_valid_float(self, integral):
         '''
-        Function which checks if the 'f', 'x','r' and'v' keys in the POST are continuous variables
+        Function which checks if the 'f', 'x','r' and'v' key values in the POST are continuous variables
             and greater than 0
         
         Parameters
@@ -248,7 +246,6 @@ class preprocess_post_body():
         try:
             float_casted_integral=float(integral)
             if float_casted_integral<0:
-                #raise ValueError("Input must be continuous variables and greater than zero. Entered:", str(integral))
                 error_msg = "Input must be greater than zero. Entered: "+ str(integral)
                 abort(404, description=error_msg)
             return float_casted_integral 
@@ -288,7 +285,7 @@ class rest_api_handler(preprocess_post_body, Resource):
     """
     Class which handles REST API requests using Flask framework
 
-    Class 'rest_api_handler' inherts the properties and methods from its parent class 'Resource'
+    Class 'rest_api_handler' inherts the properties and methods from its parent classes 'Resource' and 'preprocess_post_body'
 
     ...
 
@@ -338,7 +335,7 @@ class rest_api_handler(preprocess_post_body, Resource):
     post(name)
         Handles POST requests to create options in local database
     
-    delete(name
+    delete(name)
         Handles DELETE requests to delete options from local database
         
     """
@@ -367,7 +364,7 @@ class rest_api_handler(preprocess_post_body, Resource):
         Returns
         ----------
         
-        Returns the queries option together with the present value (pv) as well as 
+        Returns the requested option together with the present value (pv) as well as 
             the stored market data
             
         Raises
@@ -504,7 +501,7 @@ class black_76(rest_api_handler):
     Class to calculate Present Value of options using Black-76 formula
     
     
-    Class 'black_76' inherts the properties and methods from its parent class 'preprocess_post_body'
+    Class 'black_76' inherts the properties and methods from its parent class 'rest_api_handler'
     
     Methods
     -------
