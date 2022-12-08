@@ -117,7 +117,7 @@ def _put_value(self):
 ```
 # Flask RestAPI <a name="flask"></a>
 
-The main entry point for the Rest API application in initialised in Flask as follows:
+The main entry point for the Rest API application in Flask is initialised as follows:
 
 ```
 #define Flask server
