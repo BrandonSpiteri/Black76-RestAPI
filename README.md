@@ -19,7 +19,7 @@ A RestAPI web application which:
 
 # Black (1976) Model <a name="black"></a>
 
-The Black (1976) model is used to evaluate the present value of options and can be used for European options on commodities, future contract as well as bonds. 
+The Black (1976) model is used to evaluate the present value of options and can be used for European options pricing on commodities, future contract as well as bonds. 
 
 The model aims to give an approximation to the current present value of an option given that it relies on a number of assumptions, including:
 1. Transaction and profit taxes are ignored
