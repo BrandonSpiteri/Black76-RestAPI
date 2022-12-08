@@ -54,7 +54,7 @@ N(.) = normal cumulative distribution function
 # Environment Setup and Libraries Used
 The solution is built in Python and the web framework which handles the RestAPI web application is developed using Flask.
 
-A Python IDE is required to host the application together with the following Python and library versions:
+A Python IDE is required to host the application together using the following Python and library versions:
 
 Python == 3.6.5
 
